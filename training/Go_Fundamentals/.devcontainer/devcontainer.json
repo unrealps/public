@@ -1,0 +1,22 @@
+{
+  "name": "Go Lang Dev Container",
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "github.copilot",
+        "github.copilot-chat",
+        "github.vscode-github-actions",
+        "github.vscode-pull-request-github",
+        "golang.go"
+      ]
+    }
+  },
+  "mounts": [
+    "source=${env:HOME}/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached",
+    "source=${env:HOME}/.ssh,target=/root/.ssh,type=bind",
+  ]
+}
