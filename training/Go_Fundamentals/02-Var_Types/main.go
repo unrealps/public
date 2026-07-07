@@ -182,4 +182,29 @@ func main() {
 	country := "USA"
 	fmt.Printf("Country: %s\n", country)
 
+	// Var inference
+	var inferredInt = 42
+	var inferredFloat = 3.14
+	var inferredString = "Hello"
+	var inferredBool = true
+
+	fmt.Println("")
+	fmt.Println("---------------------------------")
+	fmt.Println("Variable type inference")
+	fmt.Println("---------------------------------")
+	fmt.Printf("Inferred int: %d\n", inferredInt)
+	fmt.Printf("Inferred float: %f\n", inferredFloat)
+	fmt.Printf("Inferred string: %s\n", inferredString)
+	fmt.Printf("Inferred bool: %t\n", inferredBool)
+
+	// Constants
+	const pi float64 = 3.14159
+	const e float64 = 2.71828
+
+	fmt.Println("")
+	fmt.Println("---------------------------------")
+	fmt.Println("Constants")
+	fmt.Println("---------------------------------")
+	fmt.Printf("Pi: %f\n", pi)
+	fmt.Printf("Euler's number: %f\n", e)
 }
